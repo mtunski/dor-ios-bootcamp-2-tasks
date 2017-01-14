@@ -7,45 +7,86 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A347F1E9E06ECA33B96A4F4F0A0BF3F /* Pods-CVApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A79679A8CB2774143314D9DD1E73238 /* Pods-CVApp-dummy.m */; };
-		6B973792EF5F02AB10A50C1A1EA7E82C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		B360CF0DA9509464906D10B814A23288 /* Pods-CVApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D0426D178F2207F006BCE92E8B2DEE /* Pods-CVApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27C94EC2F4BBA59C5DA4DC5B4DF20F69 /* UIViewController+ALAccordion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D890E925697559CD4FF041EC27CB949 /* UIViewController+ALAccordion.swift */; };
+		4D2600F5A11FF7D3E151B53B799CC120 /* ALAccordionSectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1D6398482C1CE78C2BC0DAE66EAEA0 /* ALAccordionSectionDelegate.swift */; };
+		5CEAC28D3A2FA98BC15EA51C0AF444DC /* Pods-CVApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D0426D178F2207F006BCE92E8B2DEE /* Pods-CVApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61BC5084BDA0A034529E64A9F7340874 /* ALAccordion-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D203C487B15C11B60EA9FF83469642F5 /* ALAccordion-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67531E3CD335DAA2276B93752314E83F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		6A46A37EDB06E8F28005D1CE7EE3AB4C /* ALAccordionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AA763D5E8F77737CC34C2E4BD8E002 /* ALAccordionController.swift */; };
+		A67486EBF699F3A9B88627A3A2A8399F /* ALAccordionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A2586BC0A0BC1841D8269C7ACD3F22 /* ALAccordionSection.swift */; };
+		D1163C7EBFB1B40A3AC928984CEB549D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		E07577EE4688ACB7155D451F11BD31AC /* ALAccordion-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A018F8B70AB86BA196DEC871898CBA /* ALAccordion-dummy.m */; };
+		EB7F2E92EC30A629157AF70DFA0748E1 /* Pods-CVApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A79679A8CB2774143314D9DD1E73238 /* Pods-CVApp-dummy.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		78A48D52CF55371E317094B30CFA7FF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7663BAC12D495DD50DC443103A6A0E4;
+			remoteInfo = ALAccordion;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		2C1D6398482C1CE78C2BC0DAE66EAEA0 /* ALAccordionSectionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ALAccordionSectionDelegate.swift; path = ALAccordion/Classes/ALAccordionSectionDelegate.swift; sourceTree = "<group>"; };
+		31D73C4EA89A5B30E0E304CB734F5556 /* ALAccordion.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ALAccordion.xcconfig; sourceTree = "<group>"; };
 		3BED0946E5F6FD8DDAABC421C1C478AF /* Pods-CVApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CVApp-frameworks.sh"; sourceTree = "<group>"; };
 		4441B12B9044E9007C00A321F488F9E1 /* Pods-CVApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CVApp.modulemap"; sourceTree = "<group>"; };
 		6304A4CE3E9012ECAE9B0033D5897246 /* Pods-CVApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CVApp.release.xcconfig"; sourceTree = "<group>"; };
 		65E960594CE6AFC3245F62B1B25C9BD3 /* Pods-CVApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CVApp-resources.sh"; sourceTree = "<group>"; };
+		67A018F8B70AB86BA196DEC871898CBA /* ALAccordion-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ALAccordion-dummy.m"; sourceTree = "<group>"; };
 		6A79679A8CB2774143314D9DD1E73238 /* Pods-CVApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CVApp-dummy.m"; sourceTree = "<group>"; };
+		70A2586BC0A0BC1841D8269C7ACD3F22 /* ALAccordionSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ALAccordionSection.swift; path = ALAccordion/Classes/ALAccordionSection.swift; sourceTree = "<group>"; };
+		7D890E925697559CD4FF041EC27CB949 /* UIViewController+ALAccordion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+ALAccordion.swift"; path = "ALAccordion/Classes/UIViewController+ALAccordion.swift"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9963BB3492E9A961AB97D512CD83FC08 /* Pods-CVApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CVApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A3AA8EB863D50051243F10E3990289B6 /* Pods-CVApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CVApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		A3D3C1B5C85CCA8F231C9D4271CB8D5D /* ALAccordion.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ALAccordion.modulemap; sourceTree = "<group>"; };
 		A8BA251FDDC2E4E7CB29987E1B3B4B06 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF66DF6B8A533D7C7A37F59465A6BDD5 /* Pods_CVApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CVApp.framework; path = "Pods-CVApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4773656FBC1AB5C6E633E6BA3A15125 /* Pods-CVApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CVApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C4D096D1599048AA274CB4F8132867A4 /* ALAccordion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ALAccordion.framework; path = ALAccordion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8F43B949B1CF60E4326D1D30E285B40 /* ALAccordion-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ALAccordion-prefix.pch"; sourceTree = "<group>"; };
 		C9D0426D178F2207F006BCE92E8B2DEE /* Pods-CVApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CVApp-umbrella.h"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D0AE8C5AA6D8CBC03C6E10E02AF7DA7B /* Pods_CVApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CVApp.framework; path = "Pods-CVApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D203C487B15C11B60EA9FF83469642F5 /* ALAccordion-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ALAccordion-umbrella.h"; sourceTree = "<group>"; };
+		F0AA763D5E8F77737CC34C2E4BD8E002 /* ALAccordionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ALAccordionController.swift; path = ALAccordion/Classes/ALAccordionController.swift; sourceTree = "<group>"; };
+		F3BD31B71D7FA8FF379114B400324948 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		03A3C476EA8A1F722D697CC44B281915 /* Frameworks */ = {
+		2A3167D819FCE8C0128B83670845244A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B973792EF5F02AB10A50C1A1EA7E82C /* Foundation.framework in Frameworks */,
+				67531E3CD335DAA2276B93752314E83F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E81009EB2A3F32E0E1D1EB4E7F096A64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1163C7EBFB1B40A3AC928984CEB549D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		27B433D71B72B7B8EC0365A806B932C5 /* Products */ = {
+		72253D739477CDFE1BC5E7F5ED95741F /* ALAccordion */ = {
 			isa = PBXGroup;
 			children = (
-				D0AE8C5AA6D8CBC03C6E10E02AF7DA7B /* Pods_CVApp.framework */,
+				F0AA763D5E8F77737CC34C2E4BD8E002 /* ALAccordionController.swift */,
+				70A2586BC0A0BC1841D8269C7ACD3F22 /* ALAccordionSection.swift */,
+				2C1D6398482C1CE78C2BC0DAE66EAEA0 /* ALAccordionSectionDelegate.swift */,
+				7D890E925697559CD4FF041EC27CB949 /* UIViewController+ALAccordion.swift */,
+				8B24E2991BDD9CEF1A3BCE8AA5EB147E /* Support Files */,
 			);
-			name = Products;
+			name = ALAccordion;
+			path = ALAccordion;
 			sourceTree = "<group>";
 		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
@@ -61,9 +102,41 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				27B433D71B72B7B8EC0365A806B932C5 /* Products */,
+				B053F32B1394F678528ECC23048C0D43 /* Pods */,
+				8B9689347D35BF6678A86B5684164782 /* Products */,
 				B3156D6BB14D13969E2941C3A483FC92 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		8B24E2991BDD9CEF1A3BCE8AA5EB147E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3D3C1B5C85CCA8F231C9D4271CB8D5D /* ALAccordion.modulemap */,
+				31D73C4EA89A5B30E0E304CB734F5556 /* ALAccordion.xcconfig */,
+				67A018F8B70AB86BA196DEC871898CBA /* ALAccordion-dummy.m */,
+				C8F43B949B1CF60E4326D1D30E285B40 /* ALAccordion-prefix.pch */,
+				D203C487B15C11B60EA9FF83469642F5 /* ALAccordion-umbrella.h */,
+				F3BD31B71D7FA8FF379114B400324948 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ALAccordion";
+			sourceTree = "<group>";
+		};
+		8B9689347D35BF6678A86B5684164782 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4D096D1599048AA274CB4F8132867A4 /* ALAccordion.framework */,
+				BF66DF6B8A533D7C7A37F59465A6BDD5 /* Pods_CVApp.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B053F32B1394F678528ECC23048C0D43 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72253D739477CDFE1BC5E7F5ED95741F /* ALAccordion */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		B3156D6BB14D13969E2941C3A483FC92 /* Targets Support Files */ = {
@@ -103,32 +176,58 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		723D2A9E27BF1B6882504C2E8BBB68EE /* Headers */ = {
+		90AB9611248514C8CF28B2307D68BFA8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B360CF0DA9509464906D10B814A23288 /* Pods-CVApp-umbrella.h in Headers */,
+				5CEAC28D3A2FA98BC15EA51C0AF444DC /* Pods-CVApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A359FCD2D7D064199ABCE7669B8DFA0E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61BC5084BDA0A034529E64A9F7340874 /* ALAccordion-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		F24698D9B600DDBB0E0A43A9B5553DC6 /* Pods-CVApp */ = {
+		35D5A4296F97B96526B2D14E17EA8237 /* Pods-CVApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A018D3E2AC0A0A22F9E6ABABA2D0F7A8 /* Build configuration list for PBXNativeTarget "Pods-CVApp" */;
+			buildConfigurationList = B3757FAFA4AE16CDD3DA6D4247C26447 /* Build configuration list for PBXNativeTarget "Pods-CVApp" */;
 			buildPhases = (
-				F7401B142EE2D852B0B55F43D8BB6326 /* Sources */,
-				03A3C476EA8A1F722D697CC44B281915 /* Frameworks */,
-				723D2A9E27BF1B6882504C2E8BBB68EE /* Headers */,
+				921AFBCFD12A3C92AB1259916205A853 /* Sources */,
+				E81009EB2A3F32E0E1D1EB4E7F096A64 /* Frameworks */,
+				90AB9611248514C8CF28B2307D68BFA8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9698E46D9A0C30E7B32985F460A2DC91 /* PBXTargetDependency */,
+			);
+			name = "Pods-CVApp";
+			productName = "Pods-CVApp";
+			productReference = BF66DF6B8A533D7C7A37F59465A6BDD5 /* Pods_CVApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D7663BAC12D495DD50DC443103A6A0E4 /* ALAccordion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A503860558C7AC2B5C7E34131100AF15 /* Build configuration list for PBXNativeTarget "ALAccordion" */;
+			buildPhases = (
+				78809D7DEF5C2FB70C76FEB9BCF34D0B /* Sources */,
+				2A3167D819FCE8C0128B83670845244A /* Frameworks */,
+				A359FCD2D7D064199ABCE7669B8DFA0E /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-CVApp";
-			productName = "Pods-CVApp";
-			productReference = D0AE8C5AA6D8CBC03C6E10E02AF7DA7B /* Pods_CVApp.framework */;
+			name = ALAccordion;
+			productName = ALAccordion;
+			productReference = C4D096D1599048AA274CB4F8132867A4 /* ALAccordion.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -148,27 +247,84 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 27B433D71B72B7B8EC0365A806B932C5 /* Products */;
+			productRefGroup = 8B9689347D35BF6678A86B5684164782 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F24698D9B600DDBB0E0A43A9B5553DC6 /* Pods-CVApp */,
+				D7663BAC12D495DD50DC443103A6A0E4 /* ALAccordion */,
+				35D5A4296F97B96526B2D14E17EA8237 /* Pods-CVApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F7401B142EE2D852B0B55F43D8BB6326 /* Sources */ = {
+		78809D7DEF5C2FB70C76FEB9BCF34D0B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A347F1E9E06ECA33B96A4F4F0A0BF3F /* Pods-CVApp-dummy.m in Sources */,
+				E07577EE4688ACB7155D451F11BD31AC /* ALAccordion-dummy.m in Sources */,
+				6A46A37EDB06E8F28005D1CE7EE3AB4C /* ALAccordionController.swift in Sources */,
+				A67486EBF699F3A9B88627A3A2A8399F /* ALAccordionSection.swift in Sources */,
+				4D2600F5A11FF7D3E151B53B799CC120 /* ALAccordionSectionDelegate.swift in Sources */,
+				27C94EC2F4BBA59C5DA4DC5B4DF20F69 /* UIViewController+ALAccordion.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		921AFBCFD12A3C92AB1259916205A853 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB7F2E92EC30A629157AF70DFA0748E1 /* Pods-CVApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		9698E46D9A0C30E7B32985F460A2DC91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ALAccordion;
+			target = D7663BAC12D495DD50DC443103A6A0E4 /* ALAccordion */;
+			targetProxy = 78A48D52CF55371E317094B30CFA7FF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		51EAC1ABE0B2CF2EFE9FF051486FF7BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6304A4CE3E9012ECAE9B0033D5897246 /* Pods-CVApp.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CVApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CVApp/Pods-CVApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CVApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		673254EEAF0B5BF4596080C749645884 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -209,7 +365,7 @@
 			};
 			name = Release;
 		};
-		80D4A643D33BC41DD8D178D92A71ACB6 /* Debug */ = {
+		7E125CD277538E42D7CB4E7553E80CE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C4773656FBC1AB5C6E633E6BA3A15125 /* Pods-CVApp.debug.xcconfig */;
 			buildSettings = {
@@ -238,15 +394,49 @@
 				PRODUCT_NAME = Pods_CVApp;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		8460B8678603FD99866C84D4E393751E /* Release */ = {
+		9BAE1DBCA52AFC8A86AC1C817425C780 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6304A4CE3E9012ECAE9B0033D5897246 /* Pods-CVApp.release.xcconfig */;
+			baseConfigurationReference = 31D73C4EA89A5B30E0E304CB734F5556 /* ALAccordion.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ALAccordion/ALAccordion-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ALAccordion/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ALAccordion/ALAccordion.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ALAccordion;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D5EBCC7FBBE94470DB8F4DA450E23483 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31D73C4EA89A5B30E0E304CB734F5556 /* ALAccordion.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -259,20 +449,17 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-CVApp/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ALAccordion/ALAccordion-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ALAccordion/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CVApp/Pods-CVApp.modulemap";
+				MODULEMAP_FILE = "Target Support Files/ALAccordion/ALAccordion.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_CVApp;
+				PRODUCT_NAME = ALAccordion;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -335,11 +522,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A018D3E2AC0A0A22F9E6ABABA2D0F7A8 /* Build configuration list for PBXNativeTarget "Pods-CVApp" */ = {
+		A503860558C7AC2B5C7E34131100AF15 /* Build configuration list for PBXNativeTarget "ALAccordion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				80D4A643D33BC41DD8D178D92A71ACB6 /* Debug */,
-				8460B8678603FD99866C84D4E393751E /* Release */,
+				9BAE1DBCA52AFC8A86AC1C817425C780 /* Debug */,
+				D5EBCC7FBBE94470DB8F4DA450E23483 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3757FAFA4AE16CDD3DA6D4247C26447 /* Build configuration list for PBXNativeTarget "Pods-CVApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E125CD277538E42D7CB4E7553E80CE1 /* Debug */,
+				51EAC1ABE0B2CF2EFE9FF051486FF7BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
