@@ -87,21 +87,53 @@
 			isa = PBXGroup;
 			children = (
 				8F8F7F301E2ACF8600D8801E /* AppDelegate.swift */,
-				8F8F7F311E2ACF8600D8801E /* Assets.xcassets */,
-				8F8F7F321E2ACF8600D8801E /* LaunchScreen.storyboard */,
-				8F8F7F341E2ACF8600D8801E /* Main.storyboard */,
-				8F8F7F361E2ACF8600D8801E /* DetailsEducationViewController.swift */,
-				8F8F7F371E2ACF8600D8801E /* DetailsExperienceViewController.swift */,
-				8F8F7F381E2ACF8600D8801E /* DetailsHeaderView.swift */,
-				8F8F7F391E2ACF8600D8801E /* DetailsInterestsViewController.swift */,
-				8F8F7F3A1E2ACF8600D8801E /* DetailsLanguagesViewController.swift */,
-				8F8F7F3B1E2ACF8600D8801E /* DetailsSeparatorView.swift */,
-				8F8F7F3C1E2ACF8600D8801E /* DetailsSkillsViewController.swift */,
-				8F8F7F3D1E2ACF8600D8801E /* DetailsViewController.swift */,
-				8F8F7F3E1E2ACF8600D8801E /* IndexViewController.swift */,
+				8F8F7F511E2ADF1C00D8801E /* Helpers */,
+				8F8F7F4F1E2ADA2900D8801E /* Controllers */,
+				8F8F7F4E1E2ADA1F00D8801E /* Views */,
+				8F8F7F501E2ADA5100D8801E /* Resources */,
 				8F8F7F3F1E2ACF8600D8801E /* Info.plist */,
 			);
 			path = CVApp;
+			sourceTree = "<group>";
+		};
+		8F8F7F4E1E2ADA1F00D8801E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8F8F7F381E2ACF8600D8801E /* DetailsHeaderView.swift */,
+				8F8F7F3B1E2ACF8600D8801E /* DetailsSeparatorView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8F8F7F4F1E2ADA2900D8801E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8F8F7F361E2ACF8600D8801E /* DetailsEducationViewController.swift */,
+				8F8F7F371E2ACF8600D8801E /* DetailsExperienceViewController.swift */,
+				8F8F7F391E2ACF8600D8801E /* DetailsInterestsViewController.swift */,
+				8F8F7F3A1E2ACF8600D8801E /* DetailsLanguagesViewController.swift */,
+				8F8F7F3C1E2ACF8600D8801E /* DetailsSkillsViewController.swift */,
+				8F8F7F3D1E2ACF8600D8801E /* DetailsViewController.swift */,
+				8F8F7F3E1E2ACF8600D8801E /* IndexViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8F8F7F501E2ADA5100D8801E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8F8F7F311E2ACF8600D8801E /* Assets.xcassets */,
+				8F8F7F341E2ACF8600D8801E /* Main.storyboard */,
+				8F8F7F321E2ACF8600D8801E /* LaunchScreen.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8F8F7F511E2ADF1C00D8801E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		9B2ED9C35CA7B58CCD849291 /* Frameworks */ = {
