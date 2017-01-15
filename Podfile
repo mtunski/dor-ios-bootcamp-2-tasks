@@ -6,4 +6,5 @@ target 'CVApp' do
   use_frameworks!
 
   pod 'ALAccordion'
+  pod 'SwiftHEXColors'
 end

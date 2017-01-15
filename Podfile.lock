@@ -1,12 +1,15 @@
 PODS:
   - ALAccordion (0.4.0)
+  - SwiftHEXColors (1.1.0)
 
 DEPENDENCIES:
   - ALAccordion
+  - SwiftHEXColors
 
 SPEC CHECKSUMS:
   ALAccordion: 23cb8e8761e4259bfb92638a0e0ed2ec820dc0eb
+  SwiftHEXColors: 8f7e364df7929e32cff9f9eeb044bb215167d6be
 
-PODFILE CHECKSUM: 86306141adca1b5b6919d84c8a73facd7a01b007
+PODFILE CHECKSUM: 1db917faf66c991863811d83e3bc2a819eabb8dc
 
 COCOAPODS: 1.1.1

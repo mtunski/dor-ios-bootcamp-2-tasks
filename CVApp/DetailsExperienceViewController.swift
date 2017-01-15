@@ -1,6 +1,7 @@
 import UIKit
 
 import ALAccordion
+import SwiftHEXColors
 
 class DetailsExperienceViewController: UIViewController, ALAccordionSectionDelegate {
   override func viewDidLoad() {
@@ -23,6 +24,7 @@ class DetailsExperienceViewController: UIViewController, ALAccordionSectionDeleg
     UIView.animate(withDuration: duration, delay: 0, options: .curveEaseInOut, animations: {
       let h = self.headerView as! DetailsHeaderView
       h.topSeparator.alpha = 0
+      h.backgroundColor = UIColor(hex: 0xe3e3e3)
     }, completion: nil)
   }
   
@@ -32,6 +34,7 @@ class DetailsExperienceViewController: UIViewController, ALAccordionSectionDeleg
     UIView.animate(withDuration: duration, delay: 0, options: .curveEaseInOut, animations: {
       let h = self.headerView as! DetailsHeaderView
       h.topSeparator.alpha = 1
+      h.backgroundColor = UIColor(hex: 0xffffffff)
     }, completion: nil)
   }
   
