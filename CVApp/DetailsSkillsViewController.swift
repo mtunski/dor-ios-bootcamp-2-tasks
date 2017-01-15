@@ -12,8 +12,9 @@ class DetailsSkillsViewController: UIViewController, ALAccordionSectionDelegate 
   let headerView: UIView = {
     let header = DetailsHeaderView()
     
-    header.titleLabel.text = "Skills"
-    
+    header.titleLabel.text    = "Skills"
+    header.topSeparator.alpha = 0
+
     return header
   }()
   

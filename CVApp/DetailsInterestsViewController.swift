@@ -12,8 +12,9 @@ class DetailsInterestsViewController: UIViewController, ALAccordionSectionDelega
   let headerView: UIView = {
     let header = DetailsHeaderView()
     
-    header.titleLabel.text = "Interests"
-    
+    header.titleLabel.text    = "Interests"
+    header.topSeparator.alpha = 0
+
     return header
   }()
   

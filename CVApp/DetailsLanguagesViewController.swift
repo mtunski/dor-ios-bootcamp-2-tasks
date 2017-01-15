@@ -12,8 +12,9 @@ class DetailsLanguagesViewController: UIViewController, ALAccordionSectionDelega
   let headerView: UIView = {
     let header = DetailsHeaderView()
     
-    header.titleLabel.text = "Languages"
-    
+    header.titleLabel.text    = "Languages"
+    header.topSeparator.alpha = 0
+
     return header
   }()
   
