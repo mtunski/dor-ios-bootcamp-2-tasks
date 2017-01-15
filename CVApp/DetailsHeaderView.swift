@@ -37,16 +37,10 @@ class DetailsHeaderView: UIView {
   override init(frame: CGRect) {
     super.init(frame: frame)
     
-    commonInit()
+    setup()
   }
   
-  override func awakeFromNib() {
-    super.awakeFromNib()
-    
-    commonInit()
-  }
-  
-  func commonInit() {
+  func setup() {
     addSubview(topSeparator)
     addSubview(titleLabel)
     addSubview(bottomSeparator)

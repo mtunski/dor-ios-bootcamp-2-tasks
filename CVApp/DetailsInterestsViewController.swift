@@ -1,30 +1,14 @@
-import UIKit
-
-import ALAccordion
-
-class DetailsInterestsViewController: UIViewController, ALAccordionSectionDelegate {
+class DetailsInterestsViewController: DetailsSectionViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    headerView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(headerTapped(_:))))
+    setup()
   }
   
-  let headerView: UIView = {
-    let header = DetailsHeaderView()
+  func setup() {
+    let h = headerView as! DetailsHeaderView
     
-    header.titleLabel.text    = "Interests"
-    header.topSeparator.alpha = 0
-
-    return header
-  }()
-  
-  func headerTapped(_ recognizer: UITapGestureRecognizer) {
-    if let sectionIndex = accordionController?.sectionIndexForViewController(self) {
-      if accordionController!.openSectionIndex == sectionIndex {
-        accordionController?.closeSectionAtIndex(sectionIndex, animated: true)
-      } else {
-        accordionController?.openSectionAtIndex(sectionIndex, animated: true)
-      }
-    }
+    h.topSeparator.alpha = 0
+    h.titleLabel.text = "Interests"
   }
 }

@@ -1,5 +1,3 @@
-import UIKit
-
 import ALAccordion
 
 class DetailsViewController: ALAccordionController {
@@ -8,7 +6,6 @@ class DetailsViewController: ALAccordionController {
     
     createSections()
   }
-  
   
   func createSections() {
     let storyboard                      = UIStoryboard(name: "Main", bundle: Bundle.main)

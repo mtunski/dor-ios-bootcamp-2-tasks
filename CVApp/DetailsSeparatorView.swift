@@ -2,9 +2,7 @@ import UIKit
 
 class DetailsSeparatorView: UIView {
   var separatorColor: UIColor = UIColor.white { didSet { setNeedsDisplay() }}
-  
-  @IBInspectable var lineWidth: CGFloat = 1.0 { didSet { setNeedsDisplay() }}
-  
+  var lineWidth: CGFloat = 1.0 { didSet { setNeedsDisplay() }}
   
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
@@ -13,16 +11,10 @@ class DetailsSeparatorView: UIView {
   override init(frame: CGRect) {
     super.init(frame: frame)
     
-    commonInit()
+    setup()
   }
   
-  override func awakeFromNib() {
-    super.awakeFromNib()
-    
-    commonInit()
-  }
-  
-  func commonInit() {
+  func setup() {
     backgroundColor = UIColor.clear
   }
   
