@@ -2,8 +2,9 @@ import UIKit
 
 import Contacts
 
-class IndexViewController: UIViewController {
+class IndexViewController: UITableViewController {
   let contactsStore = CNContactStore()
+  var contacts = [CNContact]()
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -37,7 +38,7 @@ class IndexViewController: UIViewController {
     let keysToFetch = [
       CNContactGivenNameKey,
       CNContactFamilyNameKey
-      ].map { $0 as CNKeyDescriptor }
+    ].map { $0 as CNKeyDescriptor }
     
     let fetch = CNContactFetchRequest(keysToFetch: keysToFetch)
     fetch.unifyResults = true
@@ -45,8 +46,10 @@ class IndexViewController: UIViewController {
     
     try? contactsStore.enumerateContacts(with: fetch) {
       (contact, _) -> Void in
-        print(contact)
+      self.contacts.append(contact)
     }
+    
+    DispatchQueue.main.async { self.tableView.reloadData() }
   }
   
   func showUnauthorizedAlert(_ message: String) {
@@ -59,5 +62,18 @@ class IndexViewController: UIViewController {
     alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
     
     DispatchQueue.main.async { self.present(alert, animated: true, completion: nil) }
+  }
+  
+  override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return contacts.count
+  }
+  
+  override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+      let cell      = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+      let contact   = contacts[indexPath.row]
+  
+      cell.textLabel?.text = "\(contact.givenName) \(contact.familyName)"
+  
+      return cell
   }
 }
