@@ -5,4 +5,3 @@ class IndexViewController: UIViewController {
     return true
   }
 }
-
