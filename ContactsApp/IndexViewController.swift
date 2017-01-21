@@ -3,10 +3,14 @@ import UIKit
 import Contacts
 
 class IndexViewController: UITableViewController {
+    @IBOutlet weak var iconView: UIImageView!
+    @IBOutlet weak var cityLabel: UILabel!
+    @IBOutlet weak var iconView: UIImageView!
   let contactsStore = CNContactStore()
   var contacts = [CNContact]()
   
   override func viewDidLoad() {
+    @IBOutlet weak var conditionsLabel: UILabel!
     super.viewDidLoad()
     
     loadContacts()
