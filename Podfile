@@ -16,6 +16,8 @@ target 'WeatherApp' do
 
   use_frameworks!
 
+  pod 'SwiftHEXColors'
+
   plugin 'cocoapods-keys', {
     :project => 'WeatherApp',
     :keys => [

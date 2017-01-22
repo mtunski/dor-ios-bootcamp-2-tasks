@@ -1,5 +1,6 @@
 import UIKit
 
+import SwiftHEXColors
 import Keys
 
 class IndexViewController: UIViewController {
@@ -8,11 +9,26 @@ class IndexViewController: UIViewController {
   @IBOutlet weak var dateLabel: UILabel!
   @IBOutlet weak var conditionsLabel: UILabel!
   @IBOutlet weak var temperatureLabel: UILabel!
+  @IBOutlet weak var cityTextField: UITextField!
+  @IBOutlet weak var forecastsStackView: UIStackView!
+  
+  @IBAction func cityTextFieldPrimaryActionTriggered(_ sender: Any) {
+  
+    print(cityTextField.text!)
+    cityTextField.resignFirstResponder()
+  }
 
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    fetchWeatherData("Wroclaw")
+    cityTextField.backgroundColor = UIColor(hex: 0x000000, alpha: 0.5)
+
+    cityTextField.attributedPlaceholder =
+      NSAttributedString(string: "Enter city…", attributes: [NSForegroundColorAttributeName : UIColor.white])
+    
+    fetchCurrentWeather("Wroclaw")
+    fetchForecast("Wroclaw")
   }
   
   func setupBackground(_ metadata: [String: Any]) {
@@ -25,10 +41,13 @@ class IndexViewController: UIViewController {
   }
   
   func setupConditions(_ conditions: [String: Any]) {
-    let icon = ImagesChooser().icon(conditions["icon"] as! String)
-    
-    iconView.image = icon
     conditionsLabel.text = (conditions["description"] as! String).capitalized
+    setupIcon(iconView, conditions)
+  }
+  
+  func setupIcon(_ view: UIImageView, _ conditions: [String: Any]) {
+    let icon = ImagesChooser().icon(conditions["icon"] as! String)
+    view.image = icon
   }
   
   func setupCity(_ city: String) {
@@ -46,11 +65,10 @@ class IndexViewController: UIViewController {
     dateLabel.text = dateFormatter.string(from: Date())
   }
   
-  func fetchWeatherData(_ city: String) {
+  func fetchCurrentWeather(_ city: String) {
     let apiKey             = WeatherAppKeys().openWeatherMapAPIKey
     let baseUrl            = "http://api.openweathermap.org/data/2.5"
     let currentWeatherUrl  = "\(baseUrl)/weather?q=\(city)&units=metric&APPID=\(apiKey)"
-//    let forecastWeatherUrl = "\(baseUrl)/forecast?q=\(city)&APPID=\(apiKey)"
     
     var request = URLRequest(url: URL(string: currentWeatherUrl)!)
     request.httpMethod = "GET"
@@ -76,6 +94,39 @@ class IndexViewController: UIViewController {
             self.setupTemperature(weather["temp"] as! Int)
           }
 
+        } catch {}
+      }
+    }.resume()
+  }
+  
+  func fetchForecast(_ city: String) {
+    let apiKey      = WeatherAppKeys().openWeatherMapAPIKey
+    let baseUrl     = "http://api.openweathermap.org/data/2.5"
+    let forecastUrl = "\(baseUrl)/forecast?q=\(city)&units=metric&APPID=\(apiKey)"
+    
+    var request = URLRequest(url: URL(string: forecastUrl)!)
+    request.httpMethod = "GET"
+    
+    let session = URLSession.shared
+    session.dataTask(with: request) { data, _, error in
+      if  (error == nil) {
+        do {
+          let parsedData = try (JSONSerialization.jsonObject(with: data!, options: []) as! [String: Any])["list"] as! NSArray
+          let forecasts = parsedData.objects(at: [0, 1, 2, 3, 4])
+          forecasts.enumerated().forEach({ index, forecast in 
+            
+            if let forecast = (forecast as? [String: Any]) {
+              let hour = Calendar.current.component(.hour, from: Date(timeIntervalSince1970: forecast["dt"] as! Double))
+              let temperature = ((forecast["main"] as! [String: Any])["temp"] as! Int)
+              let conditions = (forecast["weather"] as! NSArray)[0] as! [String: Any]
+
+              DispatchQueue.main.async {
+                (self.forecastsStackView.subviews[index].subviews[0] as! UILabel).text = "\(hour)"
+                self.setupIcon((self.forecastsStackView.subviews[index].subviews[1] as! UIImageView), conditions)
+                (self.forecastsStackView.subviews[index].subviews[2] as! UILabel).text = "\(temperature)°"
+              }
+            }
+          })          
         } catch {}
       }
     }.resume()

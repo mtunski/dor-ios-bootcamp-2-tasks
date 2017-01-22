@@ -10,6 +10,10 @@ class IndexViewController: UITableViewController {
   var contacts = [CNContact]()
   
   override func viewDidLoad() {
+    @IBOutlet weak var forecastsStackView: UIStackView!
+    @IBAction func cityTextFieldSubmit(_ sender: Any) {
+    }
+    @IBOutlet weak var cityTextField: UITextField!
     @IBOutlet weak var conditionsLabel: UILabel!
     super.viewDidLoad()
     
@@ -22,6 +26,8 @@ class IndexViewController: UITableViewController {
       authorizeContacts()
     case .denied, .restricted:
       self.showUnauthorizedAlert("Please allow the app to access your contacts through the Settings.")
+      @IBAction func cityTextFieldPrimaryActionTriggered(_ sender: Any) {
+        }
     case .authorized:
       fetchContacts()
     }
