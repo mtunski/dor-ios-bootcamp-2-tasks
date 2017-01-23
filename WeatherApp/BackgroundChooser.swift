@@ -2,16 +2,16 @@ import UIKit
 
 class ImagesChooser {
   func background(_ sunrise: Double, _ sunset: Double) -> UIImage {
-    var imageName: String
+    var image: UIImage
     let now = Date()
     
     if (now < Date(timeIntervalSince1970: sunrise) || now > Date(timeIntervalSince1970: sunset)) {
-      imageName = "Night"
+      image = #imageLiteral(resourceName: "Night")
     } else {
-      imageName = "Day"
+      image = #imageLiteral(resourceName: "Day")
     }
   
-    return UIImage(named: imageName)!
+    return image
   }
   
   func icon(_ code: String) -> UIImage {
