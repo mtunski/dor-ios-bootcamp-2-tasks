@@ -18,7 +18,7 @@ class OpenWeatherMapAPIClient {
   }
 
   private func call(_ method: String, _ city: String, _ callback: @escaping (Result) -> ()) {
-    let urlString = "http://api.openweathermap.org/data/2.5/\(method)?q=\(city)&units=metric&APPID=\(apiKey)"
+    let urlString = "http://api.openweathermap.org/data/2.5/\(method)?q=\(city)&units=metric&APPID=\(apiKey)".addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed)!
     var request   = URLRequest(url: URL(string: urlString)!)
     
     request.httpMethod = "GET"

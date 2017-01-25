@@ -11,12 +11,38 @@ class IndexViewController: UIViewController {
   @IBOutlet weak var currentConditionsLabel: UILabel!
   @IBOutlet weak var currentTemperatureLabel: UILabel!
   @IBOutlet weak var forecastStackView: UIStackView!
-  
+  @IBOutlet weak var cityField: UITextField!
+  @IBOutlet weak var editingTipStackView: UIStackView!
+
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    setupCityPicker()
     setupCurrentWeather("Wroclaw")
     setupForecast("Wroclaw")
+  }
+  
+  func setupCityPicker() {
+    cityLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.cityLabelTapped)))
+  }
+  
+  func cityLabelTapped() {
+    cityField.becomeFirstResponder()
+    cityLabel.isHidden           = true
+    editingTipStackView.isHidden = true
+    cityField.isHidden           = false
+    cityField.text               = cityLabel.text
+  }
+  
+  @IBAction func cityFieldPrimaryActionTriggered(_ sender: Any) {
+    cityField.resignFirstResponder()
+    cityLabel.isHidden           = false
+    editingTipStackView.isHidden = false
+    cityField.isHidden           = true
+    cityLabel.text               = cityField.text
+    
+    self.setupCurrentWeather(cityLabel.text!)
+    self.setupForecast(cityLabel.text!)
   }
 
   func setupIcon(_ view: UIImageView, _ code: String) {
