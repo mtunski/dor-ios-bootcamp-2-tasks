@@ -17,6 +17,7 @@ target 'WeatherApp' do
   use_frameworks!
 
   pod 'SwiftHEXColors'
+  pod 'SwiftyJSON'
 
   plugin 'cocoapods-keys', {
     :project => 'WeatherApp',

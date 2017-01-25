@@ -1,11 +1,11 @@
 import UIKit
 
 class ImagesChooser {
-  func background(_ sunrise: Double, _ sunset: Double) -> UIImage {
+  func background(_ sunrise: Date, _ sunset: Date) -> UIImage {
     var image: UIImage
     let now = Date()
     
-    if (now < Date(timeIntervalSince1970: sunrise) || now > Date(timeIntervalSince1970: sunset)) {
+    if (now < sunrise || now > sunset) {
       image = #imageLiteral(resourceName: "Night")
     } else {
       image = #imageLiteral(resourceName: "Day")

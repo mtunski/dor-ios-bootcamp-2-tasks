@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8162FEE4E30E6FA9164167FF /* Pods_WeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8657F7288EBCD6405FB1A76E /* Pods_WeatherApp.framework */; };
+		8F3C2E321E38D1F1005A5E12 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3C2E311E38D1F1005A5E12 /* Weather.swift */; };
 		8F4E72BE1E33A5C500BEDD03 /* BackgroundChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4E72BD1E33A5C500BEDD03 /* BackgroundChooser.swift */; };
+		8F52AD8E1E369E0600DEB32C /* OpenWeatherMapAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F52AD8D1E369E0600DEB32C /* OpenWeatherMapAPIClient.swift */; };
 		8FD0859A1E3178F6007D96A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD085991E3178F6007D96A5 /* AppDelegate.swift */; };
 		8FD0859C1E3178F6007D96A5 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0859B1E3178F6007D96A5 /* IndexViewController.swift */; };
 		8FD0859F1E3178F6007D96A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FD0859D1E3178F6007D96A5 /* Main.storyboard */; };
@@ -19,7 +21,9 @@
 /* Begin PBXFileReference section */
 		1CC3744D1DCF65131E9B054C /* Pods-WeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherApp/Pods-WeatherApp.release.xcconfig"; sourceTree = "<group>"; };
 		8657F7288EBCD6405FB1A76E /* Pods_WeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F3C2E311E38D1F1005A5E12 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		8F4E72BD1E33A5C500BEDD03 /* BackgroundChooser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundChooser.swift; sourceTree = "<group>"; };
+		8F52AD8D1E369E0600DEB32C /* OpenWeatherMapAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenWeatherMapAPIClient.swift; sourceTree = "<group>"; };
 		8F6878DFC7F366E0502A7C24 /* Pods-WeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherApp/Pods-WeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8FD085961E3178F6007D96A5 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FD085991E3178F6007D96A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +58,8 @@
 			isa = PBXGroup;
 			children = (
 				8F4E72BD1E33A5C500BEDD03 /* BackgroundChooser.swift */,
+				8F52AD8D1E369E0600DEB32C /* OpenWeatherMapAPIClient.swift */,
+				8F3C2E311E38D1F1005A5E12 /* Weather.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -79,11 +85,11 @@
 		8FD085981E3178F6007D96A5 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
-				8F4E72BC1E33A59D00BEDD03 /* Helpers */,
-				8FD085AD1E317914007D96A5 /* Resources */,
+				8FD085991E3178F6007D96A5 /* AppDelegate.swift */,
 				8FD085AC1E31790B007D96A5 /* Controllers */,
 				8FD085AB1E317905007D96A5 /* Views */,
-				8FD085991E3178F6007D96A5 /* AppDelegate.swift */,
+				8FD085AD1E317914007D96A5 /* Resources */,
+				8F4E72BC1E33A59D00BEDD03 /* Helpers */,
 				8FD085A51E3178F6007D96A5 /* Info.plist */,
 			);
 			path = WeatherApp;
@@ -258,6 +264,8 @@
 				8FD0859C1E3178F6007D96A5 /* IndexViewController.swift in Sources */,
 				8FD0859A1E3178F6007D96A5 /* AppDelegate.swift in Sources */,
 				8F4E72BE1E33A5C500BEDD03 /* BackgroundChooser.swift in Sources */,
+				8F52AD8E1E369E0600DEB32C /* OpenWeatherMapAPIClient.swift in Sources */,
+				8F3C2E321E38D1F1005A5E12 /* Weather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

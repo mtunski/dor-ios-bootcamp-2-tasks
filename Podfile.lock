@@ -2,11 +2,13 @@ PODS:
   - ALAccordion (0.4.0)
   - Keys (1.0.0)
   - SwiftHEXColors (1.1.0)
+  - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - ALAccordion
   - Keys (from `Pods/CocoaPodsKeys`)
   - SwiftHEXColors
+  - SwiftyJSON
 
 EXTERNAL SOURCES:
   Keys:
@@ -16,7 +18,8 @@ SPEC CHECKSUMS:
   ALAccordion: 23cb8e8761e4259bfb92638a0e0ed2ec820dc0eb
   Keys: 9c35bf00f612ee1d48556f4a4b9b4551e224e90f
   SwiftHEXColors: 8f7e364df7929e32cff9f9eeb044bb215167d6be
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 62c84dae0daa18d8b8bb90ec751a736c5c9008e5
+PODFILE CHECKSUM: 4c249d43be24f73819c8e23045ba6857ddc0c732
 
 COCOAPODS: 1.1.1
