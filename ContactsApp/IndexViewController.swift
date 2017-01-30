@@ -80,8 +80,9 @@ class IndexViewController: UITableViewController {
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "showContact" {
       if let indexPath = self.tableView.indexPathForSelectedRow {
-        let contact = contacts[indexPath.row]
+        let contact    = contacts[indexPath.row]
         let controller = segue.destination as! DetailsViewController
+        
         controller.contact = contact
       }
     }
