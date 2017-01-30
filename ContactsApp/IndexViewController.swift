@@ -46,7 +46,7 @@ class IndexViewController: UITableViewController {
 
     try? contactsStore.enumerateContacts(with: fetch) {
       (contact, _) -> Void in
-      self.contacts.append(contact)
+        self.contacts.append(contact)
     }
 
     DispatchQueue.main.async { self.tableView.reloadData() }
