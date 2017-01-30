@@ -165,10 +165,10 @@
             </objects>
             <point key="canvasLocation" x="140.625" y="138.38028169014083"/>
         </scene>
-        <!--Details Experience View Controller-->
+        <!--Details Section View Controller-->
         <scene sceneID="J4Z-o7-7dm">
             <objects>
-                <viewController storyboardIdentifier="DetailsExperienceViewController" id="Ptc-kg-8OL" customClass="DetailsExperienceViewController" customModule="CVApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailsExperienceViewController" id="Ptc-kg-8OL" customClass="DetailsSectionViewController" customModule="CVApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YvL-Y8-VSM"/>
                         <viewControllerLayoutGuide type="bottom" id="Rvi-Rx-9Vg"/>
@@ -284,10 +284,10 @@
             </objects>
             <point key="canvasLocation" x="-503" y="750"/>
         </scene>
-        <!--Details Interests View Controller-->
+        <!--Details Section View Controller-->
         <scene sceneID="4Hr-ts-Gww">
             <objects>
-                <viewController storyboardIdentifier="DetailsInterestsViewController" id="ZGl-RB-FsH" customClass="DetailsInterestsViewController" customModule="CVApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailsInterestsViewController" id="ZGl-RB-FsH" customClass="DetailsSectionViewController" customModule="CVApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XUl-rV-jNf"/>
                         <viewControllerLayoutGuide type="bottom" id="VK6-hn-qtw"/>
@@ -340,10 +340,10 @@
             </objects>
             <point key="canvasLocation" x="781.875" y="870.42253521126759"/>
         </scene>
-        <!--Details Languages View Controller-->
+        <!--Details Section View Controller-->
         <scene sceneID="mWO-0k-PNN">
             <objects>
-                <viewController storyboardIdentifier="DetailsLanguagesViewController" id="NKr-Nl-EPw" customClass="DetailsLanguagesViewController" customModule="CVApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailsLanguagesViewController" id="NKr-Nl-EPw" customClass="DetailsSectionViewController" customModule="CVApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iwQ-OF-yix"/>
                         <viewControllerLayoutGuide type="bottom" id="vHG-GF-Jil"/>
@@ -423,10 +423,10 @@
             </objects>
             <point key="canvasLocation" x="1419" y="871"/>
         </scene>
-        <!--Details Education View Controller-->
+        <!--Details Section View Controller-->
         <scene sceneID="mlv-hY-hOV">
             <objects>
-                <viewController storyboardIdentifier="DetailsEducationViewController" id="wUB-Aa-VbF" customClass="DetailsEducationViewController" customModule="CVApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailsEducationViewController" id="wUB-Aa-VbF" customClass="DetailsSectionViewController" customModule="CVApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2Kh-AX-oy2"/>
                         <viewControllerLayoutGuide type="bottom" id="3Ks-mS-WvI"/>
@@ -473,10 +473,10 @@
             </objects>
             <point key="canvasLocation" x="2070" y="871"/>
         </scene>
-        <!--Details Skills View Controller-->
+        <!--Details Section View Controller-->
         <scene sceneID="Rd5-xt-VHM">
             <objects>
-                <viewController storyboardIdentifier="DetailsSkillsViewController" id="uI4-mB-L4h" customClass="DetailsSkillsViewController" customModule="CVApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailsSkillsViewController" id="uI4-mB-L4h" customClass="DetailsSectionViewController" customModule="CVApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="C1M-AV-ICV"/>
                         <viewControllerLayoutGuide type="bottom" id="xco-eT-eU1"/>
